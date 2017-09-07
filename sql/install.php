@@ -191,12 +191,3 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'smart_blog_gallary_imag
         `legend` varchar(256) NOT NULL,
         PRIMARY KEY (`id_smart_blog_gallary_images`,`id_lang`)
         ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8';
-
-$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'smart_blog_post_meta` (  
-  `id_smart_blog_post_meta` int(11) NOT NULL auto_increment,
-  `id_smart_blog_post` int(11) NOT NULL,  
-  `meta_key` VARCHAR(50) NOT NULL,  
-  `meta_value` LONGTEXT,  
-    PRIMARY KEY (`id_smart_blog_post_meta`, `id_smart_blog_post`),
-    KEY `id_smart_blog_post` (`id_smart_blog_post`)
-) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8';
